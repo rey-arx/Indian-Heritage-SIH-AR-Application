@@ -32,7 +32,7 @@ class _SimpleScreenState extends State<SimpleScreen> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('Vuforia AR'),
+        title: Text('Monuments 3D view'),
       ),
       body: Card(
           margin: const EdgeInsets.all(0),

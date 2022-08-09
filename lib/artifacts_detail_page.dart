@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_universe/data.dart';
-import 'package:flutter_universe/home_page.dart';
+import 'artifacts_data_page.dart';
 import 'constants.dart';
 import 'package:flutter_universe/samplescenepage.dart';
 
-class DetailPage extends StatelessWidget {
-  final PlanetInfo planetInfo;
-
-  const DetailPage({Key key, this.planetInfo}) : super(key: key);
+class artifactDetailPage extends StatelessWidget {
+  final ArtifactsInfo artifactsInfo;
+  const artifactDetailPage({Key key, this.artifactsInfo}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +25,7 @@ class DetailPage extends StatelessWidget {
                       children: [
 
                         Text(
-                          planetInfo.position.toString(),
+                          artifactsInfo.position.toString(),
                           style: TextStyle(
                             fontFamily: 'Avenir',
                             fontSize: 247,
@@ -36,7 +34,7 @@ class DetailPage extends StatelessWidget {
                           ),
                           textAlign: TextAlign.left,
                         ),
-                        Image.asset(planetInfo.iconImage),
+                        Image.asset(artifactsInfo.iconImage),
 
                       ],
                     ),
@@ -48,7 +46,7 @@ class DetailPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        planetInfo.position.toString(),
+                        artifactsInfo.position.toString(),
                         style: TextStyle(
                           fontFamily: 'Avenir',
                           fontSize: 247,
@@ -62,7 +60,7 @@ class DetailPage extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Image.asset(planetInfo.iconImage),
+                          Image.asset(artifactsInfo.iconImage),
                         ],
                       ),
                       //),
@@ -77,7 +75,7 @@ class DetailPage extends StatelessWidget {
                       children: <Widget>[
                         SizedBox(height: 300),
                         Text(
-                          planetInfo.name,
+                          artifactsInfo.name,
                           style: TextStyle(
                             fontFamily: 'Avenir',
                             fontSize: 56,
@@ -94,7 +92,6 @@ class DetailPage extends StatelessWidget {
                           color: Colors.green,
                           textColor: Colors.white,
                           onPressed: () {
-                            
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -115,7 +112,7 @@ class DetailPage extends StatelessWidget {
                         Divider(color: Colors.black38),
                         SizedBox(height: 32),
                         Text(
-                          planetInfo.description ?? '',
+                          artifactsInfo.description ?? '',
                           maxLines: 590,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
@@ -147,7 +144,7 @@ class DetailPage extends StatelessWidget {
                     height: 250,
                     padding: const EdgeInsets.only(left: 32.0),
                     child: ListView.builder(
-                        itemCount: planetInfo.images.length,
+                        itemCount: artifactsInfo.images.length,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Card(
@@ -158,7 +155,7 @@ class DetailPage extends StatelessWidget {
                             child: AspectRatio(
                                 aspectRatio: 1,
                                 child: Image.network(
-                                  planetInfo.images[index],
+                                  artifactsInfo.images[index],
                                   fit: BoxFit.cover,
                                 )),
                           );

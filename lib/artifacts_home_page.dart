@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_universe/detail_page.dart';
+import 'artifacts_data_page.dart';
 import 'constants.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'artifacts_home_page.dart';
-import 'data.dart';
+import 'artifacts_detail_page.dart';
 
-class HomePage extends StatefulWidget {
+class artifactHomePage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  State<artifactHomePage> createState() => _artifactHomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
-  List<String> items = ["Monuments", "Artifacts"];
-  String selectedItem = "Monuments";
+class _artifactHomePageState extends State<artifactHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +30,7 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      'Explore',
+                      'Artifacts',
                       style: TextStyle(
                         fontFamily: 'Avenir',
                         fontSize: 44,
@@ -42,20 +39,6 @@ class _HomePageState extends State<HomePage> {
                       ),
                       textAlign: TextAlign.left,
                     ),
-                    DropdownButton(
-                        value: selectedItem,
-                        items: items.map((String items) {
-                          return DropdownMenuItem(
-                            value: items,
-                            child: Text(items),
-                          );
-                        }).toList(),
-                        onChanged: (String newValue) {
-                          setState(() {
-                            selectedItem = newValue;
-                            onSelected(context, selectedItem);
-                          });
-                        }),
                   ],
                 ),
               ),
@@ -76,8 +59,8 @@ class _HomePageState extends State<HomePage> {
                         Navigator.push(
                           context,
                           PageRouteBuilder(
-                            pageBuilder: (context, a, b) => DetailPage(
-                              planetInfo: planets[index],
+                            pageBuilder: (context, a, b) => artifactDetailPage(
+                              artifactsInfo: planets[index],
                             ),
                           ),
                         );
@@ -200,15 +183,5 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
     );
-  }
-
-  onSelected(BuildContext context, selectedItem) {
-    switch (selectedItem) {
-      case "Artifacts":
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => artifactHomePage()));
-
-        break;
-    }
   }
 }
