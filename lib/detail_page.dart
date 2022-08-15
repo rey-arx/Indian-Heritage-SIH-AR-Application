@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_universe/data.dart';
 import 'constants.dart';
-import 'plainsurfaceDetecture.dart';
-import 'package:flutter_unity_widget/flutter_unity_widget.dart';
-import 'konark.dart';
-import 'indiaGate.dart';
+import 'samplescenepage.dart'; //import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 
 class DetailPage extends StatelessWidget {
   final PlanetInfo planetInfo;
@@ -141,45 +138,87 @@ class DetailPage extends StatelessWidget {
   }
 
   void PlainSUrfacePgaeRouter(BuildContext context) {
-    UnityWidgetController _unityWidgetController;
+    // UnityWidgetController _unityWidgetController;
 
     if (planetInfo.position == 1) {
-      
+      print("111111111111111111111111111111111111111");
+      //_unityWidgetController.postMessage("GameObject", "LoadScene", "1");
+      //pageIndex = "1";
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Konark()),
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "1")),
       );
     } else if (planetInfo.position == 2) {
-      
+      print("22222222222222222222222222222222222222222222");
+      //pageIndex = "2";
+      //_unityWidgetController.postMessage("GameObject", "LoadScene", "2");
 
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => IndiaGate()),
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "2")),
       );
     } else if (planetInfo.position == 3) {
-      print("33333333333333333333333333333");
-      _unityWidgetController.postMessage("triggerNative", "LoadScene", "3");
+      print("33333333333333333333333333333333333333333333333");
+      //pageIndex = "3";
+      // _unityWidgetController.postMessage("GameObject", "LoadScene", "3");
 
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => SimpleScreen()),
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "3")),
       );
     } else if (planetInfo.position == 4) {
-      print("444444444444444444444444444444444444");
-
-      _unityWidgetController.postMessage("triggerNative", "LoadScene", "4");
+      print("33333333333333333333333333333333333333333333333");
+      //pageIndex = "3";
+      // _unityWidgetController.postMessage("GameObject", "LoadScene", "3");
 
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => SimpleScreen()),
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "4")),
       );
     } else if (planetInfo.position == 5) {
-      _unityWidgetController.postMessage("triggerNative", "LoadScene", "5");
-      print("555555555555555555555555555");
+      print("33333333333333333333333333333333333333333333333");
+      //pageIndex = "3";
+      // _unityWidgetController.postMessage("GameObject", "LoadScene", "3");
 
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => SimpleScreen()),
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "5")),
+      );
+    } else if (planetInfo.position == 6) {
+      print("33333333333333333333333333333333333333333333333");
+      //pageIndex = "3";
+      // _unityWidgetController.postMessage("GameObject", "LoadScene", "3");
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "6")),
+      );
+    } else if (planetInfo.position == 7) {
+      print("33333333333333333333333333333333333333333333333");
+      //pageIndex = "3";
+      // _unityWidgetController.postMessage("GameObject", "LoadScene", "3");
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "7")),
+      );
+    } else if (planetInfo.position == 8) {
+      print("33333333333333333333333333333333333333333333333");
+      //pageIndex = "3";
+      // _unityWidgetController.postMessage("GameObject", "LoadScene", "3");
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "8")),
+      );
+    } else if (planetInfo.position == 9) {
+      print("33333333333333333333333333333333333333333333333");
+      //pageIndex = "3";
+      // _unityWidgetController.postMessage("GameObject", "LoadScene", "3");
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex: "9")),
       );
     }
   }

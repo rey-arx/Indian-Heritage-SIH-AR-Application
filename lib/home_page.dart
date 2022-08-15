@@ -232,8 +232,7 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => SimpleScreen()));
-                    _unityWidgetController.postMessage("triggerNative", "LoadScene", "1");
+                    MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex : "0")));
               },
             ),
             IconButton(

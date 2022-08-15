@@ -64,24 +64,22 @@ In March 2019, the Maharashtra state government proposed a four-step plan to dev
 
 ''',
       images: []),
-  PlanetInfo(
-    4,
-    name: 'Uthirakosamangai Temple',
-    iconImage: 'assets/Uthira2.png',
-    description:
-        '''Uthirakosamangai, also known as Mangalanatha Swamy temple, is a Shaiva temple situated near Ramanathapuram in the Ramanathapuram district of Tamil Nadu. The temple is much older and the structure as it exists today is believed to be built by the Pandya kings, Achutappa Nayak (1529–1542 CE), Muthuveerappar and other kings of Ramanthapuram at various times. The temple has been glorified by the hymns of 9th-century saint Manickavasagar and 15th-century saint Arunagirinathar. 
+  PlanetInfo(4,
+      name: 'Uthirakosamangai Temple',
+      iconImage: 'assets/Uthira2.png',
+      description:
+          '''Uthirakosamangai, also known as Mangalanatha Swamy temple, is a Shaiva temple situated near Ramanathapuram in the Ramanathapuram district of Tamil Nadu. The temple is much older and the structure as it exists today is believed to be built by the Pandya kings, Achutappa Nayak (1529–1542 CE), Muthuveerappar and other kings of Ramanthapuram at various times. The temple has been glorified by the hymns of 9th-century saint Manickavasagar and 15th-century saint Arunagirinathar. 
 The temple is considered sacred along the lines of Ramanathapuram, Sethu Madhava Theertham and Lakshmana Theertham. The temple is a prominent tourist destination of Ramanathapuram district. 
 The temple has numerous shrines, with those of Mangalanathar, Mangalambigai and Natarajar being the most prominent. The temple houses a 6 ft (1.8 m) tall ancient maragatha Nataraja idol carved out of emerald, being the one of its kind. The temple has six daily rituals at various times from 5:30 a.m. to 8 p.m., and six yearly festivals on its calendar. The temple is maintained and administered by the Hindu Religious and Endowment Board of the Government of Tamil Nadu.
 
 As per Hindu legend, once hundreds of rishis (ascetics) performed penance worshipping Shiva. Shiva told the rishis that he would appear in the form of a fireball to acknowledge the penance of Mandothari, the wife of king Ravana in Sri Lanka. Shiva appeared in the form a small child in Ravana's palace. Ravana lifted the beautiful child and there was a small wound out of it. Simultaneously, there was a fireball out of the Agni Theertham (temple tank), which the rishis felt were on account of Shiva attacking Ravana. Out of thousand, 999 killed themselves by falling in the fire, while one of them remained to save the vedic books. Shiva was pleased by the rishi and appeared as Sahasralingam (thousand lingams) for the 999 and one more for himself in the temple. The single rishi was believed to have emerged later as Manickavasgar in his later birth. 
 ''',
-  ),
-  PlanetInfo(
-    5,
-    name: 'TajMahal',
-    iconImage: 'assets/TajMahal.png',
-    description:
-        '''The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD. The existence of several historical and Quaranic inscriptions in Arabic script have facilitated setting the chronology of Taj Mahal. For its construction, masons, stone-cutters, inlayers, carvers, painters, calligraphers, dome builders and other artisans were requisitioned from the whole of the empire and also from the Central Asia and Iran. Ustad-Ahmad Lahori was the main architect of the Taj Mahal.
+      images: []),
+  PlanetInfo(5,
+      name: 'TajMahal',
+      iconImage: 'assets/TajMahal.png',
+      description:
+          '''The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD. The existence of several historical and Quaranic inscriptions in Arabic script have facilitated setting the chronology of Taj Mahal. For its construction, masons, stone-cutters, inlayers, carvers, painters, calligraphers, dome builders and other artisans were requisitioned from the whole of the empire and also from the Central Asia and Iran. Ustad-Ahmad Lahori was the main architect of the Taj Mahal.
 
 The Taj Mahal is considered to be the greatest architectural achievement in the whole range of Indo-Islamic architecture. Its recognised architectonic beauty has a rhythmic combination of solids and voids, concave and convex and light shadow; such as arches and domes further increases the aesthetic aspect. The colour combination of lush green scape reddish pathway and blue sky over it show cases the monument in ever changing tints and moods. The relief work in marble and inlay with precious and semi precious stones make it a monument apart. 
 
@@ -94,13 +92,12 @@ The most impressive in the Taj Mahal complex next to the tomb, is the main gate 
 The Taj Mahal is a perfect symmetrical planned building, with an emphasis of bilateral symmetry along a central axis on which the main features are placed. The building material used is brick-in-lime mortar veneered with red sandstone and marble and inlay work of precious/semi precious stones. The mosque and the guest house in the Taj Mahal complex are built of red sandstone in contrast to the marble tomb in the centre. Both the buildings have a large platform over the terrace at their front. Both the mosque and the guest house are the identical structures. They have an oblong massive prayer hall consist of three vaulted bays arranged in a row with central dominant portal. The frame of the portal arches and the spandrels are veneered in white marble. The spandrels are filled with flowery arabesques of stone intarsia and the arches bordered with rope molding.
 
 Criterion (i): Taj Mahal represents the finest architectural and artistic achievement through perfect harmony and excellent craftsmanship in a whole range of Indo-Islamic sepulchral architecture. It is a masterpiece of architectural style in conception, treatment and execution and has unique aesthetic qualities in balance, symmetry and harmonious blending of various elements.''',
-  ),
-  PlanetInfo(
-    6,
-    name: 'Pattadakal',
-    iconImage: 'assets/Pattadakal.png',
-    description:
-        '''Pattadakal ("place of coronation") was considered a holy place, being where the Malaprabha river turned northwards towards the Himalayas and the Kailasha mountain (uttara-vahini). As its name implies, it was used during the Chalukya dynasty for coronation ceremonies, such as that of Vinayaditya in the 7th century CE.[3][4] Other names this place was known by were Kisuvolal meaning "valley of red soil", Raktapura meaning "city of red", and Pattada-Kisuvolal meaning "red soil valley for coronation".[3][15][16] The site, states Archaeological Survey of India, is mentioned in texts by Srivijaya and is referred to by Ptolemy as "Petirgal" in his Geography.[3]
+      images: []),
+  PlanetInfo(6,
+      name: 'Pattadakal',
+      iconImage: 'assets/Pattadakal.png',
+      description:
+          '''Pattadakal ("place of coronation") was considered a holy place, being where the Malaprabha river turned northwards towards the Himalayas and the Kailasha mountain (uttara-vahini). As its name implies, it was used during the Chalukya dynasty for coronation ceremonies, such as that of Vinayaditya in the 7th century CE.[3][4] Other names this place was known by were Kisuvolal meaning "valley of red soil", Raktapura meaning "city of red", and Pattada-Kisuvolal meaning "red soil valley for coronation".[3][15][16] The site, states Archaeological Survey of India, is mentioned in texts by Srivijaya and is referred to by Ptolemy as "Petirgal" in his Geography.[3]
 
 The early rulers of the Chalukya during the 5th - 6th century were Vaishnavites (a community that believes and offers prayers to Lord Vishnu, followers of Vaishnavism) and then converted themselves into Shivaites (a community that believes and offer prayers to Lord Shiva and followers of Shivaism). Hence the temples in and around this compound are dedicated to Lord Shiva.
 
@@ -115,13 +112,12 @@ The monuments at Pattadakal are evidence of the existence, and the history, of i
 Prehistoric Monuments
 
 Based on some recent findings by Archelogist and pre-historian Prof. Ravi Korisettar published works for National Institutes of Advance studies, India, the Early Chalukyan artisans were not the first to build monuments in the Malaprabha Valley. At Bachinnagudda, just a couple of kilometres west of Pattadakallu, along the road leading to Badami, is a rough-looking monument believed to date back to the Iron Age (approximately 1200 BCE – 500 BCE). This monument, called a dolmen, belongs to a class of structures called megaliths, which were erected all over southern India mostly during the Iron Age and the succeeding Early Historic period.[24][25]''',
-  ),
-  PlanetInfo(
-    7,
-    name: 'Red Fort',
-    iconImage: 'assets/RedFort.png',
-    description:
-        '''Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. Originally red and white, Shah Jahan's favourite colours,[7] its design is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal.[8][9] The fort lies along the Yamuna River, which fed the moats surrounding most of the walls.[10] Construction began in the sacred Islamic month of Muharram, on 13 May 1638.[11]: 01  Supervised by Shah Jahan, it was completed on 6 April 1648.[12][13][14] Unlike other Mughal forts, the Red Fort's boundary walls are asymmetrical to contain the older Salimgarh Fort.[11]: 04  The fortress-palace was a focal point of the city of Shahjahanabad, which is present-day Old Delhi. Shah Jahan's successor, Aurangzeb, added the Moti Masjid (Pearl Mosque) to the emperor's private quarters, constructing barbicans in front of the two main gates to make the entrance to the palace more circuitous.[11]: 08 
+      images: []),
+  PlanetInfo(7,
+      name: 'Red Fort',
+      iconImage: 'assets/RedFort.png',
+      description:
+          '''Emperor Shah Jahan commissioned construction of the Red Fort on 12 May 1638, when he decided to shift his capital from Agra to Delhi. Originally red and white, Shah Jahan's favourite colours,[7] its design is credited to architect Ustad Ahmad Lahori, who also constructed the Taj Mahal.[8][9] The fort lies along the Yamuna River, which fed the moats surrounding most of the walls.[10] Construction began in the sacred Islamic month of Muharram, on 13 May 1638.[11]: 01  Supervised by Shah Jahan, it was completed on 6 April 1648.[12][13][14] Unlike other Mughal forts, the Red Fort's boundary walls are asymmetrical to contain the older Salimgarh Fort.[11]: 04  The fortress-palace was a focal point of the city of Shahjahanabad, which is present-day Old Delhi. Shah Jahan's successor, Aurangzeb, added the Moti Masjid (Pearl Mosque) to the emperor's private quarters, constructing barbicans in front of the two main gates to make the entrance to the palace more circuitous.[11]: 08 
 
 Image shows Red Fort's long walls including the gates as seen from Jama Masjid's tower. The walls can be seen in the background extending a couple of thousand meters.
 The walls of Red Fort (in the background) as seen from the top of Jama Masjid's tower
@@ -158,13 +154,12 @@ The INA trials, also known as the Red Fort Trials, refer to the courts-martial o
 On 15 August 1947, the first Prime Minister of India, Jawaharlal Nehru raised the Indian national flag above the Lahore Gate.[34]
 
 After Indian Independence, the site experienced few changes, and the Red Fort continued to be used as a military cantonment. A significant part of the fort remained under Indian Army control until 22 December 2003, when it was given to the Archaeological Survey of India for restoration.[35][36] In 2009 the Comprehensive Conservation and Management Plan (CCMP), prepared by the Archaeological Survey of India under Supreme Court directions to revitalise the fort, was announced.[37][38][39]''',
-  ),
-  PlanetInfo(
-    8,
-    name: "Humayun's Tomb ",
-    iconImage: 'assets/Tomb.png',
-    description:
-        '''After his death on 27 January 1556, Humayun's body was first buried in his palace in Purana Quila at Delhi. Thereafter it was taken to Sirhind, in Punjab by Khanjar Beg and, in 1558, it was seen by Humayun's son, the then Mughal Emperor, Akbar. Akbar subsequently visited the tomb in 1571, when it was about to be completed.[24][25][26]
+      images: []),
+  PlanetInfo(8,
+      name: "Humayun's Tomb ",
+      iconImage: 'assets/Tomb.png',
+      description:
+          '''After his death on 27 January 1556, Humayun's body was first buried in his palace in Purana Quila at Delhi. Thereafter it was taken to Sirhind, in Punjab by Khanjar Beg and, in 1558, it was seen by Humayun's son, the then Mughal Emperor, Akbar. Akbar subsequently visited the tomb in 1571, when it was about to be completed.[24][25][26]
 
 The tomb of Humayun was built by the orders of his first wife and chief consort, Empress Bega Begum (also known as Haji Begum). Construction began in 1565 and was completed in 1572; it cost 1.5 million rupees,[10] paid entirely by the Empress.[27] Bega Begum had been so grieved over her husband's death that she had thenceforth dedicated her life to a sole purpose: the construction of a memorial to him than would be the most magnificent mausoleum in the Empire, at a site near the Yamuna River in Delhi.[28] According to Ain-i-Akbari, a 16th-century detailed document written during the reign of Akbar, Bega Begum supervised the construction of the tomb after returning from Mecca and undertaking the Hajj pilgrimage.[29]
 
@@ -181,13 +176,12 @@ in Ronaldshay's biography of Lord Curzon a letter is quoted from Lord Curzon to 
 During the Partition of India, in August 1947 the Purana Qila together with Humayun's Tomb, became major refugee camps for Muslims migrating to the newly founded Pakistan, and was later managed by the government of India. These camps stayed open for about five years, and caused considerable damage not only to the extensive gardens, but also to the water channels and the principal structures. The camps were raided many times by jathas which caused vandalism to occur during the early partition days in 1947. Eventually, to avoid vandalism, the cenotaphs within the mausoleum were encased in brick. In the coming years, the Archaeological Survey of India (ASI) took on responsibility for the preservation of heritage monuments in India, and gradually the building and its gardens were restored. Until 1985, four unsuccessful attempts were made to reinstate the original water features.[17][31]
 
 An important phase in the restoration of the complex began around 1993, when the monument was declared a World Heritage Site. This brought new interest to its restoration, and a detailed research and excavation process began under the aegis of the Aga Khan Trust and the ASI. This culminated in 2003, when much of the complex and gardens were restored, with the historic fountains running once again after several centuries of disuse. The restoration has been a continuous process ever since, with subsequent phases addressing various aspects and monuments of the complex.[17]''',
-  ),
-  PlanetInfo(
-    9,
-    name: "Ellora Caves ",
-    iconImage: 'assets/Cave.png',
-    description:
-        '''Ellora is a UNESCO World Heritage Site located in the Aurangabad district of Maharashtra, India. It is one of the largest rock-cut Hindu temple cave complexes in the world, with artwork dating from the period 600–1000 CE.[1][2] Cave 16 features the largest single monolithic rock excavation in the world, the Kailash temple, a chariot-shaped monument dedicated to the god Shiva. The Kailash temple excavation also features sculptures depicting various Hindu deities as well as relief panels summarizing the two major Hindu epics.
+      images: []),
+  PlanetInfo(9,
+      name: "Ellora Caves ",
+      iconImage: 'assets/Cave.png',
+      description:
+          '''Ellora is a UNESCO World Heritage Site located in the Aurangabad district of Maharashtra, India. It is one of the largest rock-cut Hindu temple cave complexes in the world, with artwork dating from the period 600–1000 CE.[1][2] Cave 16 features the largest single monolithic rock excavation in the world, the Kailash temple, a chariot-shaped monument dedicated to the god Shiva. The Kailash temple excavation also features sculptures depicting various Hindu deities as well as relief panels summarizing the two major Hindu epics.
 
 There are over 100 caves at the site, all excavated from the basalt cliffs in the Charanandri Hills, 34 of which are open to public.[3] These consist of 17 Hindu (caves 13–29), 12 Buddhist (caves 1–12) and 5 Jain (caves 30–34) caves,[4][5] each group representing deities and mythologies prevalent in the 1st millennium CE, as well as monasteries of each respective religion.[4] They were built close to one another and illustrate the religious harmony that existed in ancient India.[2][6] All of the Ellora monuments were built during the Rashtrakuta dynasty, which constructed part of the Hindu and Buddhist caves, and the Yadava dynasty, which constructed a number of the Jain caves. Funding for the construction of the monuments was provided by royals, traders and the wealthy of the region.[3][7]
 
@@ -200,5 +194,5 @@ It is many a times also thought to be derived from Ilvalapuram, named after the 
 The construction at Ellora has been studied since British colonial rule. However, the overlapping styles between the Buddhist, Hindu and Jain caves has made it difficult to establish agreement concerning the chronology of their construction.[14] The disputes generally concern: one, whether the Buddhist or Hindu caves were carved first and, two, the relative dating of caves within a particular tradition. The broad consensus that has emerged is based on comparing the carving styles at Ellora to other cave temples in the Deccan region that have been dated, textual records of various dynasties, and epigraphical evidence found at various archaeological sites near Ellora and elsewhere in Maharashtra, Madhya Pradesh and Karnataka.[15][16] Geri Hockfield Malandra and other scholars[who?] have stated that the Ellora caves had three important building periods: an early Hindu period (~550 to 600 CE), a Buddhist phase (~600 to 730 CE) and a later Hindu and Jain phase (~730 to 950 CE).[15][17][18]
 
 The earliest caves may have been built during the Traikutakas and Vakataka dynasties, the latter being known for sponsoring the Ajanta caves. However, it is considered likely that some of the earliest caves, such as Cave 29 (Hindu), were built by the Shiva-inspired Kalachuri dynasty, while the Buddhist caves were built by the Chalukya dynasty.[15] The later Hindu caves and early Jain caves were built by the Rashtrakuta dynasty, while the last Jain caves were built by the Yadava dynasty, which had also sponsored other Jain cave temples.[19][20][21]''',
-  ),
+      images: []),
 ];
