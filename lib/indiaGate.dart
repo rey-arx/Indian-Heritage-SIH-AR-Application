@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 
-class SimpleScreen extends StatefulWidget {
-  SimpleScreen({Key key}) : super(key: key);
+class IndiaGate extends StatefulWidget {
+  IndiaGate({Key key}) : super(key: key);
 
   @override
-  _SimpleScreenState createState() => _SimpleScreenState();
+  _IndiaGateState createState() => _IndiaGateState();
 }
 
-class _SimpleScreenState extends State<SimpleScreen> {
+class _IndiaGateState extends State<IndiaGate> {
   static final GlobalKey<ScaffoldState> _scaffoldKey =
       GlobalKey<ScaffoldState>();
 
@@ -18,6 +18,9 @@ class _SimpleScreenState extends State<SimpleScreen> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance?.addPostFrameCallback((_) {
+      onUnityCreatedd("2");
+    });
   }
 
   @override
@@ -28,10 +31,20 @@ class _SimpleScreenState extends State<SimpleScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('Monuments 3D view'),
+        title: Text('India Gate'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.settings),
+            onPressed: () {
+              onUnityCreatedd("1");
+            },
+          ),
+          // add more IconButton
+        ],
       ),
       body: Card(
           margin: const EdgeInsets.all(0),
@@ -82,13 +95,10 @@ class _SimpleScreenState extends State<SimpleScreen> {
     );
   }
 
-  /*void setRotationSpeed(String speed) {
-    _unityWidgetController.postMessage(
-      'Cube',
-      'SetRotationSpeed',
-      speed,
-    );
-  }*/
+  void onUnityCreatedd(String a) {
+    print("gateeeeeeeeeeeeeeeeeeeeeeeeee");
+    _unityWidgetController.postMessage("triggerNative", "LoadScene", a);
+  }
 
   void onUnityMessage(message) {
     print('Received message from unity: ${message.toString()}');

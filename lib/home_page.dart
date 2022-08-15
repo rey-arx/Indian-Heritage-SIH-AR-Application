@@ -1,20 +1,71 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_universe/detail_page.dart';
-import 'constants.dart';
+import 'color.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'artifacts_home_page.dart';
 import 'data.dart';
+import 'samplescenepage.dart';
+import 'package:flutter_unity_widget/flutter_unity_widget.dart';
 
 class HomePage extends StatefulWidget {
+  HomePage({Key key}) : super(key: key);
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  List<String> items = ["Monuments", "Artifacts"];
+  // final Shader linearGradient = LinearGradient(
+  // colors: <Color>[
+  // Color.fromARGB(255, 203, 0, 244),
+  // Color.fromARGB(255, 203, 0, 244),
+  // Color.fromARGB(255, 139, 0, 104),
+  // Color.fromARGB(255, 0, 157, 255),
+  //],
+  //).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
+  static final GlobalKey<ScaffoldState> _scaffoldKey =
+      GlobalKey<ScaffoldState>();
+  UnityWidgetController _unityWidgetController;
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _unityWidgetController.dispose();
+    super.dispose();
+  }
+
+  List<String> items = ["Monuments", "Artefacts"];
   String selectedItem = "Monuments";
+
   @override
   Widget build(BuildContext context) {
+    //drop-down menu  started.........
+    var dropdownButton2 = DropdownButton(
+      value: selectedItem,
+      //data: ThemeData.dark(),
+      items: items.map((String items) {
+        return DropdownMenuItem(
+          value: items,
+          child: Text(items),
+        );
+      }).toList(),
+      onChanged: (String newValue) {
+        setState(() {
+          selectedItem = newValue;
+          onSelected(context, selectedItem);
+        });
+      },
+      style: new TextStyle(
+        color: Color.fromARGB(255, 13, 106, 187),
+      ),
+    );
+
+    var dropdownButton = dropdownButton2;
+    //drop-down menu  ended.........
+
     return Scaffold(
       backgroundColor: gradientEndColor,
       body: Container(
@@ -33,29 +84,16 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: <Widget>[
                     Text(
-                      'Explore',
-                      style: TextStyle(
+                      'Caffeinated Coders',
+                      style: new TextStyle(
                         fontFamily: 'Avenir',
-                        fontSize: 44,
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
                         color: const Color(0xffffffff),
-                        fontWeight: FontWeight.w900,
                       ),
                       textAlign: TextAlign.left,
                     ),
-                    DropdownButton(
-                        value: selectedItem,
-                        items: items.map((String items) {
-                          return DropdownMenuItem(
-                            value: items,
-                            child: Text(items),
-                          );
-                        }).toList(),
-                        onChanged: (String newValue) {
-                          setState(() {
-                            selectedItem = newValue;
-                            onSelected(context, selectedItem);
-                          });
-                        }),
+                    dropdownButton,
                   ],
                 ),
               ),
@@ -92,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(32),
                                 ),
-                                color: Colors.white,
+                                color: Color.fromARGB(255, 255, 255, 255),
                                 child: Padding(
                                   padding: const EdgeInsets.all(32.0),
                                   child: Column(
@@ -104,17 +142,17 @@ class _HomePageState extends State<HomePage> {
                                         planets[index].name,
                                         style: TextStyle(
                                           fontFamily: 'Avenir',
-                                          fontSize: 44,
+                                          fontSize: 35,
                                           color: const Color(0xff47455f),
                                           fontWeight: FontWeight.w900,
                                         ),
                                         textAlign: TextAlign.left,
                                       ),
                                       Text(
-                                        'Solar System',
+                                        'Monuments',
                                         style: TextStyle(
                                           fontFamily: 'Avenir',
-                                          fontSize: 23,
+                                          fontSize: 17,
                                           color: primaryTextColor,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -124,7 +162,7 @@ class _HomePageState extends State<HomePage> {
                                       Row(
                                         children: <Widget>[
                                           Text(
-                                            'Know more',
+                                            'Description',
                                             style: TextStyle(
                                               fontFamily: 'Avenir',
                                               fontSize: 18,
@@ -147,7 +185,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                           Hero(
                             tag: planets[index].position,
-                            child: Image.asset(planets[index].iconImage),
+                            child: Image.asset(planets[index].iconImage,
+                                width: 200),
                           ),
                           Positioned(
                             right: 24,
@@ -190,7 +229,12 @@ class _HomePageState extends State<HomePage> {
             ),
             IconButton(
               icon: Image.asset('assets/search_icon.png'),
-              onPressed: () {},
+              onPressed: () {
+                
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => SimpleScreen()));
+                    _unityWidgetController.postMessage("triggerNative", "LoadScene", "1");
+              },
             ),
             IconButton(
               icon: Image.asset('assets/profile_icon.png'),
@@ -204,7 +248,7 @@ class _HomePageState extends State<HomePage> {
 
   onSelected(BuildContext context, selectedItem) {
     switch (selectedItem) {
-      case "Artifacts":
+      case "Artefacts":
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => artifactHomePage()));
 

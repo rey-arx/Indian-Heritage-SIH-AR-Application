@@ -19,6 +19,7 @@ dependencies:
   flutter_unity_widget:
     path: ../
   pointer_interceptor: ^0.9.3+2
+  translator:
 
 dev_dependencies:
   flutter_test:
