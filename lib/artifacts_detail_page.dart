@@ -70,7 +70,9 @@ class artifactDetailPage extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SimpleScreen()),
+                                  builder: (context) => SimpleScreen(
+                                        pageIndex: "0",
+                                      )),
                             );
                           },
                         ),

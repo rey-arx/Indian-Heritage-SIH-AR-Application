@@ -25,43 +25,68 @@ class _DetailPageState extends State<DetailPage> {
 
   String selectedItem = "Select_a_language";
   String text = "hello";
-
+  bool ans = false;
+  String cont = "";
+  String ErrorText = "";
   @override
   Widget build(BuildContext context) {
+    //ans = false;
+
     //below string used in translator
-    String cont = widget.planetInfo.description;
+    if (selectedItem == "Select_a_language") {
+      ErrorText = "select a language";
+    } else {}
 
     //when a dropdown value changes it will load
     void trans(lan) async {
       switch (lan) {
+        case "Select_a_language":
+          cont = "";
+          ErrorText = "select a language";
+          break;
         case "English":
+          ans = true;
           print(cont);
-          await translator.translate(cont, to: "en").then((value) {
+          await translator
+              .translate(widget.planetInfo.description, to: "en")
+              .then((value) {
             setState(() {
-              widget.planetInfo.description = value.toString();
+              cont = value.toString();
             });
           });
+          ErrorText = "";
           break;
         case "Tamil":
-          await translator.translate(cont, to: "ta").then((value) {
+          ans = true;
+          await translator
+              .translate(widget.planetInfo.description, to: "ta")
+              .then((value) {
             setState(() {
-              widget.planetInfo.description = value.toString();
+              cont = value.toString();
             });
           });
+          ErrorText = "";
           break;
         case "Hindi":
-          await translator.translate(cont, to: "hi").then((value) {
+          ans = true;
+          await translator
+              .translate(widget.planetInfo.description, to: "hi")
+              .then((value) {
             setState(() {
-              widget.planetInfo.description = value.toString();
+              cont = value.toString();
             });
           });
+          ErrorText = "";
           break;
         case "Malayalam":
-          await translator.translate(cont, to: "ml").then((value) {
+          await translator
+              .translate(widget.planetInfo.description, to: "ml")
+              .then((value) {
             setState(() {
-              widget.planetInfo.description = value.toString();
+              cont = value.toString();
             });
           });
+          ErrorText = "";
           break;
       }
       //translator.translate(cont, to: "ta").then((value) {
@@ -148,10 +173,14 @@ class _DetailPageState extends State<DetailPage> {
                               });
                             }),
                         //DropdownMenu ended.........
+                        Text(
+                          ErrorText,
+                          style: TextStyle(color: Colors.redAccent),
+                        ),
                         Divider(color: Colors.black38),
                         SizedBox(height: 32),
                         Text(
-                          widget.planetInfo.description ?? '',
+                          cont ?? '',
                           maxLines: 590,
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(

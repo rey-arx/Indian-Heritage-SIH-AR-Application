@@ -20,6 +20,7 @@ dependencies:
     path: ../
   pointer_interceptor: ^0.9.3+2
   translator:
+  flutter_map: ^2.2.0
 
 dev_dependencies:
   flutter_test:

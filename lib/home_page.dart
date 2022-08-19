@@ -6,9 +6,9 @@ import 'artifacts_home_page.dart';
 import 'data.dart';
 import 'samplescenepage.dart';
 import 'package:flutter_unity_widget/flutter_unity_widget.dart';
+import 'package:flutter_universe/main_animated_markers_map.dart.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key}) : super(key: key);
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -22,21 +22,6 @@ class _HomePageState extends State<HomePage> {
   // Color.fromARGB(255, 0, 157, 255),
   //],
   //).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
-  static final GlobalKey<ScaffoldState> _scaffoldKey =
-      GlobalKey<ScaffoldState>();
-  UnityWidgetController _unityWidgetController;
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _unityWidgetController.dispose();
-    super.dispose();
-  }
-
   List<String> items = ["Monuments", "Artefacts"];
   String selectedItem = "Monuments";
 
@@ -230,14 +215,20 @@ class _HomePageState extends State<HomePage> {
             IconButton(
               icon: Image.asset('assets/search_icon.png'),
               onPressed: () {
-                
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => SimpleScreen(pageIndex : "0")));
+                //UnityWidgetController _unityWidgetController;
+                // _unityWidgetController.postMessage(
+                //     "GameObject", "LoadScene", "0");
+
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => SimpleScreen(pageIndex: "0")));
               },
             ),
             IconButton(
               icon: Image.asset('assets/profile_icon.png'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => MainAnimatedMarkersMap()));
+              },
             ),
           ],
         ),

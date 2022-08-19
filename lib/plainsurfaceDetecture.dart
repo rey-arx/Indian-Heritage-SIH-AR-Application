@@ -93,7 +93,7 @@ class _SimpleScreenState extends State<SimpleScreen> {
 
   void onUnityCreatedd(String a) {
     print("sroeuihgoiwheirhgpiwhepri");
-    _unityWidgetController.postMessage("triggerNative", "LoadScene", a);
+    _unityWidgetController.postMessage("GameObject", "LoadScene", a);
   }
 
   void onUnityMessage(message) {

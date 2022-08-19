@@ -31,7 +31,7 @@ class _SimpleScreenState extends State<SimpleScreen> {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(Duration(seconds: 2), () {
       onUnityCreatedd(widget.pageIndex);
     });
     print(widget.pageIndex);
@@ -110,7 +110,7 @@ class _SimpleScreenState extends State<SimpleScreen> {
   void onUnityCreatedd(String a) {
     print("sroeuihgoiwheirhgpiwhepri");
     print(a);
-    _unityWidgetController.postMessage("triggerNative", "LoadScene", a);
+    _unityWidgetController.postMessage("GameObject", "LoadScene", a);
   }
 
   void onUnityMessage(message) {
